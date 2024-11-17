@@ -1,1 +1,1 @@
-export * from "ipyreact-tsxlib";
+export * from "paddy-ipyreact-tsxlib";

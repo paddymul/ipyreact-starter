@@ -3,7 +3,7 @@
     "build": "esbuild src/bundle.js  --bundle --outfile=./ipyreact-tsxlib.minimal.esm.js --format=esm --external:react --external:react-dom --target=esnext"
   },
   "dependencies": {
-    "ipyreact-tsxlib": "file:../ipyreact-tsxlib/dist"
+      "paddy-ipyreact-tsxlib": "^0.0.0"
   },
   "devDependencies": {
     "esbuild": "^0.24.0"

@@ -1,6 +1,5 @@
 {
-  "name": "ipyreact-tsxlib",
-  "private": true,
+  "name": "paddy-ipyreact-tsxlib",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
