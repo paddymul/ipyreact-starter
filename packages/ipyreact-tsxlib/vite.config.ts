@@ -9,7 +9,7 @@ export default defineConfig({
             entry: "./src/index.ts", // Specifies the entry point for building the library.
             name: "vite-react-ts-button", // Sets the name of the generated library.
             fileName: (format:string) => `index.${format}.js`, // Generates the output file name based on the format.
-            formats: ["es"], // Specifies the output formats (CommonJS and ES modules).
+            formats: ["cjs", "es"], // Specifies the output formats (CommonJS and ES modules).
 	},
 	rollupOptions: {
             external: ["react", "react-dom", 'react/jsx-runtime'],
