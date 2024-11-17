@@ -1,1 +1,1 @@
-export * from "paddy-vite-demo"
+export * from "paddy-ipyreact-tsxlib"

@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "build": "esbuild src/bundle.js  --bundle --outfile=./ipyreact-tsxlib.minimal.esm.js --format=esm --external:react --external:react-dom --target=esnext"
+    "bundle": "esbuild src/bundle.js  --bundle --outfile=./ipyreact-tsxlib.minimal.esm.js --format=esm --external:react --external:react-dom --target=esnext"
   },
   "dependencies": {
-      "paddy-vite-demo": "../../../vite-demo/dist/"
+      "paddy-ipyreact-tsxlib": "^0.0.2"
   },
   "devDependencies": {
     "esbuild": "^0.24.0"

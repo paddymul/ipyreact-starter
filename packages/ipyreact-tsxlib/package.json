@@ -1,17 +1,23 @@
 {
   "name": "paddy-ipyreact-tsxlib",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
+  "main": "dist/index.es.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "files": [
+    "/dist"
+  ],
   "dependencies": {
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
+    "@types/lodash": "^4.17.13",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
