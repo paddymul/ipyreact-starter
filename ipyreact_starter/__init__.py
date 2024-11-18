@@ -1,30 +1,26 @@
 import ipyreact
 from pathlib import Path
 
+
+
 ipyreact.define_module(
     "ipyreact-tsxlib",
-    Path(__file__).parent.parent / "packages/bundled-staging/ipyreact-tsxlib.minimal.esm.js")
-
-# note that this import_map is already part of the default
-ipyreact.define_import_map({
-    "canvas-confetti": "https://esm.sh/canvas-confetti@1.6.0",
-})
-
+    Path(__file__).parent.parent / "packages/bundled-staging/ipyreact-tsxlib.rollup.bundle.js")
 
 class Simple(ipyreact.ValueWidget):
-    _module="ipyreact-tsxlib"
     _esm="""
     import confetti from "canvas-confetti";
     import * as React from "react";
-    import SampleButton from "ipyreact-tsxlib";
-    
+    import ipyr from "ipyreact-tsxlib";
     export default function({value, setValue}) {
+        console.log("ipyr", ipyr);
+        const clickCallback = (foo:any) => {console.log("clickCallback", foo)}    
+
         return (<div>
-            <SampleButton label={"sample label"} />
-            <button onClick={() => confetti() && setValue(value + 1)}>
+        <ipyr.SampleButton onClick={clickCallback} label={"SampleButton label"} />
+              <button onClick={() => confetti() && setValue(value + 1)}>
             {value || 0} times confetti
         </button>
     </div>);
     };
     """
-
