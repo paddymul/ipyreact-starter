@@ -1,7 +1,7 @@
 export const SampleButton = (
-    {label, onclick}:
-    {label:string; onclick:(ev:any) => void;}) => {
-    return <button onClick={onclick}>{label}</button>
+    {label, onClick}:
+    {label:string; onClick:(ev:any) => void;}) => {
+    return <button onClick={onClick}>{label}</button>
 }
 
 export const HeaderNoArgs = () => {
