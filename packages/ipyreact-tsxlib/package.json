@@ -1,8 +1,8 @@
 {
-  "name": "paddy-ipyreact-tsxlib",
+  "name": "ipyreact-tsxlib",
   "version": "0.0.2",
   "type": "module",
-  "main": "dist/index.es.js",
+  "main": "dist/index.esm.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
