@@ -12,7 +12,7 @@ dynamic = ["version"]
 homepage = "https://github.com/paddymul/ipyreact-starter"
 repository = "https://github.com/paddymul/ipyreact-starter"
 description = ""
-authors = ["YOUR_NAME_HERE"]
+authors = [  { name = "Paddy Mullen", email = "paddy@paddymullen.com" }]
 readme = "README.md"
 requires-python = ">=3.7"
 
