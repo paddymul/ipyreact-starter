@@ -37,3 +37,9 @@ ui-test = [
 
 [tool.hatch.version]
 path = "ipyreact_starter/_version.py"
+
+[tool.hatch.build.targets.wheel]
+include = [
+   "ipyreact_starter/*.py",
+   "packages/bundled-staging/ipyreact-tsxlib.rollup.bundle.js',
+]
